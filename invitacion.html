@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;height: 95%;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@media  screen and (min-width: 560px) {
+  .countdown1{
+    display: flex;
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 29px;
+    font-family: cursive;
+    font-size: 21px;
+    color: white;
+
+}
+.countdown3{
+    display: flex;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 140px;
+    font-family: Parisienne;
+    font-size:35px;
+    color: white;
+
+}
+  .countdown2{
+    display: flex;
+    position: absolute;
+    margin-top: -130px;
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+
+}
+  .countdown{
+    display: flex;
+    position: absolute;
+    margin-top: -130px;
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+
+}
+.ico
+{
+    display: flex;
+    position: absolute;
+    margin-top: 85%;
+    margin-left: 20%;
+    font-size: 20pt;
+    font-family: Parisienne;
+
+}
+.ubicacion{ font-size: 15pt; color: black; }
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 500px) {
+    .ubicacion{
+        font-size: 12pt; color: black;
+    }
+  img {vertical-align: middle;height: 100%;}
+  .countdown1{
+    display: flex;
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 0px;
+    font-family: Parisienne;
+    font-size:26px;
+    color: white;
+
+}
+  .countdown2{
+    display: flex;
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+
+}
+  .countdown{
+    display: flex;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: white;
+
+}
+.ico{
+    display: flex;
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 70px;
+    font-family: Parisienne;
+
+}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+  img {vertical-align: middle;height: 100%;}
+}
+
+</style>
+</head>
+<body style="background:#2f4827;">
+    <div class="container mb-5">
+
+        <div class="row">
+ 
+        <div class="col-md-4 col-ms-12 m-0 p-0">
+    
+            <img  src="Invitacionvertical.png" style="width: 100%;">
+        </div>
+        <div class="col-md-4 col-ms-12 m-0 p-0" style="height: 532px;">
+
+          <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                <img src="1.jpg" style="width:100% ;opacity: 0.8;">
+              </div>
+              
+              <div class="mySlides fade">
+                <img src="2.jpg" style="width:100%;opacity: 0.8;">
+              </div>
+              <div class="mySlides fade">
+                <img src="3.jpg" style="width:100%;opacity: 0.8;">
+              </div>
+              </div>
+            <div class="countdown1">El amor nunca se da por vencido, jamás  pierde la fe, siempre tiene esperanzas y se mantiene firme en toda circunstancia. 1 corintios 13</div> 
+            <br> 
+            <br> 
+            <div class="countdown3">Faltan</div>  
+
+          <pre id="countdown" class="countdown"></pre>
+          <br>
+          <br>
+          <pre  class="countdown2">Dias     Horas   Minitos   Segundos</pre>
+
+      </div>
+        <div class="col-md-4 col-ms-12 m-0 p-0">
+          <img  src="Invitacionvertical2.gif" style="width: 100%;">
+
+        </div>
+     
+ 
+        </div>
+    </div>
+
+
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 1500); // Change image every 2 seconds
+}
+</script>
+<script>
+    // Set the start and end dates
+    var startDate = new Date();
+    var endDate = new Date("09/30/2023 06:30");
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the start date
+        var distanceStart = now - startDate;
+
+        // Find the distance between now and the end date
+        var distanceEnd = endDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distanceEnd / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distanceEnd % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distanceEnd % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distanceEnd % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="countdown"
+        document.getElementById("countdown").innerHTML = days + "       " + hours + "     "
+        + minutes + "       "+seconds;
+
+        // If the count down is finished, write some text 
+        if (distanceEnd < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "!Es hoy!";
+        }
+    }, 1000);
+</script>
+</body>
+</html> 
+
